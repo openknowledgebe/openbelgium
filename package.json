@@ -28,7 +28,9 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --mode development",
-    "prod": "rm -rf dist/ && webpack --mode production"
+    "prod": "rm -rf dist/ && webpack --mode production",
+    "lint": "eslint \"**/*.{js,jsx}\"",
+    "lint:fix": "eslint --fix \"**/*.{js,jsx}\""
   },
   "browserslist": [
     "last 2 versions",
