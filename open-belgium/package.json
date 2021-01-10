@@ -34,5 +34,8 @@
     "last 2 versions",
     "> 1%",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }

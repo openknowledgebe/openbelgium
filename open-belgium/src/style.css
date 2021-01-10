@@ -26,6 +26,63 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
 }
 
+.demo-1 {
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.demo-1 h3 {
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: demo-1 25s linear infinite;
+  -webkit-animation: demo-1 25s linear infinite;
+  animation: demo-1 25s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes demo-1 {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes demo-1 {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes demo-1 {
+  0% {
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
+}
+
 .header {
   margin-top: 15px;
   padding-bottom: 25px;
