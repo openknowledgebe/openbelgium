@@ -1,0 +1,19 @@
+.header {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+
+  grid-template-areas: 'img title' 'img unread';
+  align-items: center;
+  padding: 1em;
+}
+
+.header__title {
+  grid-area: title;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.header__img {
+  grid-area: img;
+  border-radius: 50%;
+}
