@@ -8,7 +8,7 @@
     "@babel/preset-env": "^7.8.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^5.0.1",
-    "eslint": "^6.8.0",
+    "eslint": "^7.17.0",
     "eslint-config-devine": "^3.0.1",
     "file-loader": "^6.2.0",
     "html-srcsets-loader": "^0.5.1",
