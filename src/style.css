@@ -264,6 +264,21 @@ button:focus {
   filter: grayscale(100%);
 }
 
+.buttonPartner {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding: 1.7rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.buttonPartner:hover {
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .sectionBorder {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
@@ -278,6 +293,10 @@ button:focus {
   button {
     width: 50%;
   }
+
+  .buttonPartner {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 475px) {
@@ -290,6 +309,13 @@ button:focus {
 
   .sessionButton {
     width: 80%;
+  }
+
+  .buttonPartner {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding: 1rem;
+    width: 50%;
   }
 }
 
@@ -307,6 +333,12 @@ button:focus {
 
   .sessionButton {
     width: 80%;
+  }
+  .buttonPartner {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 1rem;
+    width: 40%;
   }
 }
 
@@ -378,6 +410,12 @@ button:focus {
   margin-top: 100px;
   margin-bottom: 100px;
   font-style: italic;
+}
+
+@media screen and (max-width: 475px) {
+  .emptyState {
+    font-size: 14px;
+  }
 }
 
 .sessions {
@@ -485,6 +523,7 @@ button:focus {
   justify-items: center;
   width: 80vw;
   margin-top: 20px;
+  padding-left: 30px;
 }
 
 .partner {
@@ -510,6 +549,10 @@ button:focus {
 .black {
   color: black;
   padding-left: 30px;
+}
+
+.partnersLogoBW {
+  filter: grayscale(100%);
 }
 
 @media screen and (max-width: 375px) {
