@@ -2,9 +2,9 @@ name: JavaScript CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ '2021' ]
   pull_request:
-    branches: [ main ]
+    branches: [ '2021' ]
 
 jobs:
   build:
