@@ -412,6 +412,17 @@ button:focus {
   font-style: italic;
 }
 
+.emptyStateprev {
+  text-align: center;
+  color: #cdb5fa;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-style: normal;
+  line-height: 20px;
+}
+
 @media screen and (max-width: 475px) {
   .emptyState {
     font-size: 14px;
@@ -503,7 +514,7 @@ button:focus {
   margin-top: 100px;
   background-color: #cdb5fa;
   padding-top: 30px;
-  height: 300px;
+  padding-bottom: 30px;
 }
 
 .partnersText {
@@ -514,7 +525,7 @@ button:focus {
   width: 80vw;
   padding-right: 30px;
 }
-
+/*
 .partnersLogo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -524,6 +535,15 @@ button:focus {
   width: 80vw;
   margin-top: 20px;
   padding-left: 30px;
+} */
+
+.partnersLogo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  justify-content: space-around;
+  width: 80vw;
+  margin-top: 20px;
 }
 
 .partner {
@@ -553,6 +573,7 @@ button:focus {
 
 .partnersLogoBW {
   filter: grayscale(100%);
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 375px) {
