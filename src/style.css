@@ -222,7 +222,8 @@ body {
   border: 1px solid black;
 }
 
-button {
+button,
+a.button {
   background: transparent;
   box-shadow: 0px 0px 0px transparent;
   border: 0px solid transparent;
@@ -233,9 +234,11 @@ button {
   padding: 1.7rem;
   border: 1px solid white;
   text-align: center;
+  text-decoration: none;
 }
 
-button:hover {
+button:hover,
+a.button:hover {
   background: transparent;
   box-shadow: 0px 0px 0px transparent;
   border: 0px solid transparent;
@@ -251,12 +254,14 @@ button:hover {
   border: 1px solid white;
 }
 
-button:active {
+button:active,
+a.button:active {
   outline: none;
   border: none;
 }
 
-button:focus {
+button:focus,
+a.button:focus {
   outline: 0;
 }
 
@@ -290,7 +295,8 @@ button:focus {
     margin-top: 60px;
   }
 
-  button {
+  button,
+  a.button {
     width: 50%;
   }
 
@@ -300,7 +306,8 @@ button:focus {
 }
 
 @media screen and (max-width: 475px) {
-  button {
+  button,
+  a.button {
     font-size: 13px;
     letter-spacing: 0.5px;
     padding: 1rem;
@@ -324,7 +331,8 @@ button:focus {
     margin-top: 60px;
   }
 
-  button {
+  button,
+  a.button {
     font-size: 12px;
     letter-spacing: 0.5px;
     padding: 1rem;
