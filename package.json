@@ -13,7 +13,7 @@
     "file-loader": "^6.2.0",
     "html-srcsets-loader": "^0.5.1",
     "html-webpack-plugin": "^4.5.1",
-    "mini-css-extract-plugin": "^1.3.4",
+    "mini-css-extract-plugin": "^1.3.5",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
