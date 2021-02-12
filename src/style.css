@@ -480,6 +480,7 @@ a.button:focus {
   font-size: 14px;
   letter-spacing: 0.5px;
   font-weight: 300;
+  line-height: 20px;
 }
 
 @media screen and (max-width: 800px) {
@@ -552,6 +553,7 @@ a.button:focus {
   justify-content: space-around;
   width: 80vw;
   margin-top: 20px;
+  align-items: center;
 }
 
 .partner {
@@ -581,6 +583,10 @@ a.button:focus {
 
 .partnersLogoBW {
   filter: grayscale(100%);
+  margin-bottom: 20px;
+}
+
+.partnersLogoColor {
   margin-bottom: 20px;
 }
 
@@ -623,5 +629,22 @@ a.button:focus {
 @media screen and (max-width: 550px) {
   .footer {
     margin-top: 60px;
+  }
+}
+
+.BW {
+  filter: grayscale(100%);
+}
+
+.partnersRowOne {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+}
+
+@media screen and (max-width: 550px) {
+  .partnersRowOne {
+    flex-flow: row wrap;
   }
 }
