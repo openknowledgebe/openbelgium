@@ -648,3 +648,8 @@ a.button:focus {
     flex-flow: row wrap;
   }
 }
+
+.joinButton {
+  display: block;
+  margin-top: 10px;
+}
