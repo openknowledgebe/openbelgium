@@ -652,4 +652,5 @@ a.button:focus {
 .joinButton {
   display: block;
   margin-top: 10px;
+  width: 100% !important;
 }
