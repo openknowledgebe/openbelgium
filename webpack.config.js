@@ -73,6 +73,10 @@ module.exports = (env, {mode}) => {
         template: './src/index.html',
         filename: './index.html'
       }),
+      new HtmlWebPackPlugin({
+        template: './src/code-of-conduct.html',
+        filename: './code-of-conduct.html'
+      }),
       new MiniCssExtractPlugin({
         filename: 'style.[contenthash].css'
       }),
