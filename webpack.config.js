@@ -8,7 +8,7 @@ module.exports = (env, {mode}) => {
   console.log(mode);
   return {
     output: {
-      filename: '[name].[hash].js'
+      filename: '[name].[fullhash].js'
     },
     devServer: {
       overlay: true,
@@ -80,10 +80,12 @@ module.exports = (env, {mode}) => {
               loader: 'postcss-loader',
               options: {
                 sourceMap: true,
-                plugins: [
-                  require('postcss-import'),
-                  postcssPresetEnv({stage: 0})
-                ]
+                postcssOptions: {
+                  plugins: [
+                    require('postcss-import'),
+                    postcssPresetEnv({stage: 0})
+                  ]
+                }
               }
             }
           ]
