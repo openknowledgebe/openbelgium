@@ -35,7 +35,7 @@ module.exports = (env, {mode}) => {
           ]
         },
         {
-          test: /\.(jpe?g|png|svg|webp)$/i,
+          test: /\.(svg)$/i,
           use: {
             loader: 'url-loader',
             options: {
@@ -45,6 +45,28 @@ module.exports = (env, {mode}) => {
               esModule: false // https://stackoverflow.com/questions/59070216/webpack-file-loader-outputs-object-module
             }
           }
+        },
+        {
+          test: /\.(jpe?g|png|webp)$/i,
+          use: [
+            'url-loader',
+            {
+              loader: 'webpack-image-resize-loader',
+              options: {
+                width: 350,
+                fileLoader: 'url-loader',
+                fileLoaderOptionsGenerator: (options, existingOptions) => (
+                  {
+                    ...existingOptions,
+                    esModule: false, // https://stackoverflow.com/questions/59070216/webpack-file-loader-outputs-object-module
+                    limit: 1000,
+                    context: './src',
+                    name: '[path][name].[ext]',
+                  }
+                )
+              },
+            }
+          ]
         },
         {
           test: /\.css$/,
@@ -81,7 +103,7 @@ module.exports = (env, {mode}) => {
         filename: 'style.[contenthash].css'
       }),
       new OptimizeCSSAssetsPlugin(),
-      new webpack.HotModuleReplacementPlugin()
+      new webpack.HotModuleReplacementPlugin(),
     ]
   };
 };
