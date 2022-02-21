@@ -39,5 +39,8 @@
     "last 2 versions",
     "> 1%",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "yarn": "^1.22.17"
+  }
 }
