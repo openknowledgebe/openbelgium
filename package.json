@@ -2,7 +2,7 @@
   "name": "ccsnext",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",,
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.7",
@@ -14,26 +14,22 @@
     "html-srcsets-loader": "^0.5.1",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^1.6.0",
-    "mkdirp": "^1.0.4",
-    "netlify-cli": "^9.6.6",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
     "postcss": "^8.4.5",
     "postcss-import": "^14.0.2",
     "postcss-loader": "^5.3.0",
     "postcss-preset-env": "^7.1.0",
     "resolve-url-loader": "^4.0.0",
-    "rimraf": "^3.0.2",
     "style-loader": "^2.0.0",
     "stylelint-config-devine": "^2.0.3",
     "url-loader": "^4.1.1",
-    "webpack": "^5.69.1",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
     "webpack-image-resize-loader": "^5.0.0"
   },
   "scripts": {
     "dev": "webpack serve --mode development",
-    "build": "npm run build",
+    "build": "rm -rf dist/ && webpack --mode production",
     "lint": "eslint \"src/\"",
     "lint:fix": "eslint --fix \"src/\""
   },
@@ -41,9 +37,5 @@
     "last 2 versions",
     "> 1%",
     "not dead"
-  ],
-  "dependencies": {
-    "node-sass": "^7.0.1",
-    "yarn": "^1.22.17"
-  }
+  ]
 }
