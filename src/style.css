@@ -297,10 +297,12 @@ a.button:focus {
 
   button,
   a.button {
+    border-radius: 8px;
     width: 50%;
   }
 
   .buttonPartner {
+    border-radius: 8px;
     width: 50%;
   }
 }
@@ -308,6 +310,7 @@ a.button:focus {
 @media screen and (max-width: 475px) {
   button,
   a.button {
+    border-radius: 8px;
     font-size: 13px;
     letter-spacing: 0.5px;
     padding: 1rem;
@@ -335,6 +338,7 @@ a.button:focus {
 
   button,
   a.button {
+    border-radius: 8px;
     font-size: 12px;
     letter-spacing: 0.5px;
     padding: 1rem;
@@ -342,9 +346,11 @@ a.button:focus {
   }
 
   .sessionButton {
+    border-radius: 8px;
     width: 80%;
   }
   .buttonPartner {
+    border-radius: 8px;
     font-size: 12px;
     letter-spacing: 0.5px;
     padding: 1rem;
