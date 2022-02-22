@@ -25,7 +25,8 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
-    "webpack-image-resize-loader": "^5.0.0"
+    "webpack-image-resize-loader": "^5.0.0",
+    "start": "webpack-dev-server --mode development"
   },
   "scripts": {
     "dev": "webpack serve --mode development",
