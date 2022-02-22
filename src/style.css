@@ -315,10 +315,12 @@ a.button:focus {
   }
 
   .sessionButton {
+    border-radius: 8px;
     width: 80%;
   }
 
   .buttonPartner {
+    border-radius: 8px;
     font-size: 13px;
     letter-spacing: 0.5px;
     padding: 1rem;
