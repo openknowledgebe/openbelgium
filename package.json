@@ -20,15 +20,16 @@
     "postcss-loader": "^5.3.0",
     "postcss-preset-env": "^7.1.0",
     "resolve-url-loader": "^4.0.0",
+    "start": "webpack-dev-server --mode development",
     "style-loader": "^2.0.0",
     "stylelint-config-devine": "^2.0.3",
     "url-loader": "^4.1.1",
     "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-image-resize-loader": "^5.0.0",
-    "start": "webpack-dev-server --mode development"
+    "webpack-cli": "^4.9.2",
+    "webpack-image-resize-loader": "^5.0.0"
   },
   "scripts": {
+    "start": "webpack-dev-server --mode development",
     "dev": "webpack serve --mode development",
     "build": "rm -rf dist/ && webpack --mode production",
     "lint": "eslint \"src/\"",
@@ -38,5 +39,8 @@
     "last 2 versions",
     "> 1%",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "react-scripts": "^5.0.0"
+  }
 }
