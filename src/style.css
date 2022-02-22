@@ -415,8 +415,8 @@ a.button:focus {
   color: #cdb5fa;
   font-size: 18px;
   font-weight: 300;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-style: italic;
 }
 
@@ -425,8 +425,8 @@ a.button:focus {
   color: #cdb5fa;
   font-size: 18px;
   font-weight: 300;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-style: normal;
   line-height: 20px;
 }
