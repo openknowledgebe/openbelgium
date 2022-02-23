@@ -19,7 +19,7 @@
     "postcss-import": "^14.0.2",
     "postcss-loader": "^5.3.0",
     "postcss-preset-env": "^7.3.0",
-    "resolve-url-loader": "^4.0.0",
+    "resolve-url-loader": "^5.0.0",
     "style-loader": "^2.0.0",
     "stylelint-config-devine": "^2.0.3",
     "url-loader": "^4.1.1",
