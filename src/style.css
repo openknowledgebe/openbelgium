@@ -53,6 +53,28 @@ body {
   -webkit-animation: demo-1 25s linear infinite;
   animation: demo-1 25s linear infinite;
 }
+
+/* table styling */
+.table {
+  display: grid;
+  grid-template-columns: 1fr 75%; 
+  max-width: 480px;
+}
+
+.table > div {
+margin: 2px;
+background: powderblue;
+padding: 8px;
+
+}
+.table > div1 {
+margin: 2px;
+background: powderblue;
+padding: 8px;
+margin: auto;
+
+}
+
 /* Move it (define the animation) */
 @-moz-keyframes demo-1 {
   0% {
