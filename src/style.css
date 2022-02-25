@@ -624,6 +624,28 @@ a.button:focus {
   }
 }
 
+.flat-table {
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+  overflow: auto;
+  width: auto;
+  
+  th {
+    background-color: #cdb5fa;
+    color: black;
+    font-weight: normal;
+    padding: 20px 30px;
+    text-align: center;
+  }
+  td {
+    background-color: black;
+    color: white;
+    padding: 15px 15px;
+  }
+}
+
+
 .footer {
   margin-top: 100px;
   padding-bottom: 100px;
