@@ -13,10 +13,12 @@ jobs:
         with:
           persist-credentials: false
 
+      - uses: actions/setup-node@v2
+
       - name: Install and Build
         run: |
-          yarn install
-          yarn run build
+          npm install
+          npm run build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
