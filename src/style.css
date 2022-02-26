@@ -58,8 +58,9 @@ body {
 .table {
   font-size: 18px;
   display: grid;
-  grid-template-columns: 1fr 75%; 
-  max-width: 480px;
+  grid-template-columns: 1fr 70%; 
+  max-width: 100%;
+  margin-top: 25px;
 }
 
 .table > div {
