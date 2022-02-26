@@ -56,20 +56,21 @@ body {
 
 /* table styling */
 .table {
+  font-size: 18px;
   display: grid;
   grid-template-columns: 1fr 75%; 
   max-width: 480px;
 }
 
 .table > div {
+font-size: 18px;  
 margin: 2px;
-background: powderblue;
 padding: 8px;
 
 }
 .table > div1 {
+font-size: 18px;  
 margin: 2px;
-background: powderblue;
 padding: 8px;
 margin: auto;
 
