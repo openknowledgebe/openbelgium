@@ -1,9 +1,8 @@
-
 name: Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build-and-deploy:
@@ -24,5 +23,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: 'dist' # The folder the action should deploy.
+          FOLDER: "dist" # The folder the action should deploy.
           CLEAN: true # Automatically remove deleted files from the deploy branch
