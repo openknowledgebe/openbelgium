@@ -1,7 +1,7 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const postcssPresetEnv = require('postcss-preset-env');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = (env, {mode}) => {
@@ -11,7 +11,7 @@ module.exports = (env, {mode}) => {
       filename: '[name].[fullhash].js'
     },
     devServer: {
-      overlay: true,
+      // overlay: true,
       hot: true
     },
     module: {
@@ -104,7 +104,7 @@ module.exports = (env, {mode}) => {
       new MiniCssExtractPlugin({
         filename: 'style.[contenthash].css'
       }),
-      new OptimizeCSSAssetsPlugin(),
+      new CssMinimizerPlugin(),
       new webpack.HotModuleReplacementPlugin(),
     ]
   };
