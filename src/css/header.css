@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 7rem 1fr;
 
-  grid-template-areas: 'img title' 'img unread';
+  grid-template-areas: "img title" "img unread";
   align-items: center;
   padding: 1em;
 }
