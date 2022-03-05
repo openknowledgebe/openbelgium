@@ -1,14 +1,14 @@
 ---
 const { datetime, speakers, title, link } = Astro.props;
 ---
-<article class="sessionsCard">
-  <p class="sessionsDate">{Astro.props.datetime}</p>
-  <div class="sessionContent">
-    <h3 class="sessionsTitle">{Astro.props.title}</h3>
-    <p class="sessionsText">{Astro.props.speakers}</p>
+<article class="sessions-card">
+  <p class="sessions-date">{Astro.props.datetime}</p>
+  <div class="sessions-content">
+    <h3 class="sessions-title">{Astro.props.title}</h3>
+    <p class="sessions-text">{Astro.props.speakers}</p>
   </div>
 
   { Astro.props.link &&
-  <a target="_blank" href={Astro.props.link} class="button joinButton">View session</a>
+  <a target="_blank" href={Astro.props.link} class="button join-button">View session</a>
   }
 </article>

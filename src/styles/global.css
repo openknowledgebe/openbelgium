@@ -22,8 +22,7 @@ body {
   height: 100vh;
   width: 80vw;
   margin: auto;
-
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Inter, sans-serif;
 }
 
 .demo-1 {
@@ -44,13 +43,11 @@ body {
   margin: 0;
   line-height: 50px;
   text-align: center;
+
   /* Starting position */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
   transform: translateX(100%);
+
   /* Apply animation to this element */
-  -moz-animation: demo-1 25s linear infinite;
-  -webkit-animation: demo-1 25s linear infinite;
   animation: demo-1 25s linear infinite;
 }
 
@@ -68,39 +65,14 @@ body {
   margin: 2px;
   padding: 8px;
 }
-.table > div1 {
-  font-size: 18px;
-  margin: 2px;
-  padding: 8px;
-  margin: auto;
-}
 
 /* Move it (define the animation) */
-@-moz-keyframes demo-1 {
-  0% {
-    -moz-transform: translateX(100%);
-  }
-  100% {
-    -moz-transform: translateX(-100%);
-  }
-}
-@-webkit-keyframes demo-1 {
-  0% {
-    -webkit-transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-  }
-}
 @keyframes demo-1 {
   0% {
-    -moz-transform: translateX(100%); /* Firefox bug fix */
-    -webkit-transform: translateX(100%); /* Firefox bug fix */
     transform: translateX(100%);
   }
+
   100% {
-    -moz-transform: translateX(-100%); /* Firefox bug fix */
-    -webkit-transform: translateX(-100%); /* Firefox bug fix */
     transform: translateX(-100%);
   }
 }
@@ -119,7 +91,7 @@ body {
   margin: auto;
 }
 
-.navLinks {
+.nav-links {
   display: flex;
   justify-content: space-between;
   width: 150px;
@@ -159,7 +131,7 @@ body {
   margin-bottom: 8px;
 }
 
-.h1:before {
+.h1::before {
   content: "";
   color: #cdb5fa;
   display: block;
@@ -170,14 +142,14 @@ body {
   margin: 4px 10px 0 0;
 }
 
-.sectionWidth {
+.section-width {
   margin: auto;
   margin-top: 5%;
   width: 80vw;
 }
 
 @media screen and (max-width: 375px) {
-  .sectionWidth {
+  .section-width {
     margin-top: 15%;
   }
 }
@@ -223,7 +195,7 @@ body {
     margin-top: 30px;
   }
 
-  .h1:before {
+  .h1::before {
     width: 15px;
     height: 15px;
     margin: 2px 8px 0 0;
@@ -239,7 +211,7 @@ body {
   }
 }
 
-.buttonBlack {
+.button-black {
   border-radius: 8px;
   color: black;
   border: 1px solid black;
@@ -249,9 +221,8 @@ button,
 a.button {
   border-radius: 8px;
   background: transparent;
-  box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
-  text-shadow: 0px 0px 0px transparent;
+  box-shadow: 0 0 0 transparent;
+  text-shadow: 0 0 0 transparent;
   color: white;
   font-size: 16px;
   letter-spacing: 0.5px;
@@ -265,16 +236,15 @@ button:hover,
 a.button:hover {
   border-radius: 8px;
   background: transparent;
-  box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
-  text-shadow: 0px 0px 0px transparent;
+  box-shadow: 0 0 0 transparent;
+  text-shadow: 0 0 0 transparent;
   color: #cdb5fa;
   border: 1px solid #cdb5fa;
   transition: 0.3s;
   cursor: pointer;
 }
 
-.buttonBlack:hover {
+.button-black:hover {
   border-radius: 8px;
   color: white;
   border: 1px solid white;
@@ -297,7 +267,7 @@ a.button:focus {
   filter: grayscale(100%);
 }
 
-.buttonPartner {
+.button-partner {
   border-radius: 8px;
   font-size: 16px;
   letter-spacing: 0.5px;
@@ -307,21 +277,22 @@ a.button:focus {
   text-align: center;
 }
 
-.buttonPartner:hover {
+.button-partner:hover {
   border-radius: 8px;
   color: white;
   transition: 0.3s;
   cursor: pointer;
 }
 
-.sectionBorder {
+.section-border {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   padding: 1.3rem;
   width: 80vw;
 }
+
 @media screen and (max-width: 800px) {
-  .sectionBorder {
+  .section-border {
     margin-top: 60px;
   }
 
@@ -331,7 +302,7 @@ a.button:focus {
     width: 50%;
   }
 
-  .buttonPartner {
+  .button-partner {
     border-radius: 8px;
     width: 50%;
   }
@@ -347,12 +318,12 @@ a.button:focus {
     width: 50%;
   }
 
-  .sessionButton {
+  .session-button {
     border-radius: 8px;
     width: 80%;
   }
 
-  .buttonPartner {
+  .button-partner {
     border-radius: 8px;
     font-size: 13px;
     letter-spacing: 0.5px;
@@ -362,7 +333,7 @@ a.button:focus {
 }
 
 @media screen and (max-width: 375px) {
-  .sectionBorder {
+  .section-border {
     margin-top: 60px;
   }
 
@@ -375,12 +346,12 @@ a.button:focus {
     width: 40%;
   }
 
-  .sessionButton {
+  .session-button {
     border-radius: 8px;
     width: 80%;
   }
 
-  .buttonPartner {
+  .button-partner {
     border-radius: 8px;
     font-size: 12px;
     letter-spacing: 0.5px;
@@ -389,25 +360,24 @@ a.button:focus {
   }
 }
 
-.speakerContainer {
+.speaker-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-column-gap: 2vw;
-  grid-row-gap: 10px;
+  grid-gap: 10px 2vw;
   justify-items: center;
 }
 
-.speakerCard {
+.speaker-card {
   margin-top: 30px;
 }
 
-.speakerImage {
+.speaker-image {
   width: 13vw;
   height: 15vw;
   object-fit: cover;
 }
 
-.speakerText {
+.speaker-text {
   font-size: 14px;
   letter-spacing: 0.5px;
   font-weight: 300;
@@ -418,38 +388,38 @@ a.button:focus {
 }
 
 @media screen and (max-width: 1090px) {
-  .speakerContainer {
+  .speaker-container {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .speakerImage {
+  .speaker-image {
     width: 20vw;
     height: 25vw;
   }
 
-  .speakerText {
+  .speaker-text {
     width: 20vw;
   }
 }
 
 @media screen and (max-width: 475px) {
-  .speakerContainer {
+  .speaker-container {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .speakerImage {
+  .speaker-image {
     width: 35vw;
     height: 30vw;
   }
 
-  .speakerText {
+  .speaker-text {
     font-size: 12px;
     letter-spacing: 0.1px;
     width: 35vw;
   }
 }
 
-.emptyState {
+.empty-state {
   text-align: center;
   color: #cdb5fa;
   font-size: 18px;
@@ -459,7 +429,7 @@ a.button:focus {
   font-style: italic;
 }
 
-.emptyStateprev {
+.empty-stateprev {
   text-align: center;
   color: #cdb5fa;
   font-size: 18px;
@@ -471,7 +441,7 @@ a.button:focus {
 }
 
 @media screen and (max-width: 475px) {
-  .emptyState {
+  .empty-state {
     font-size: 14px;
   }
 }
@@ -482,22 +452,21 @@ a.button:focus {
   align-items: center;
 }
 
-.sessionsContainer {
+.sessions-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 5vw;
-  grid-row-gap: 10px;
+  grid-gap: 10px 5vw;
   justify-items: center;
 }
 
-.sessionsCard {
+.sessions-card {
   width: 13vw;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
 }
 
-.sessionsDate {
+.sessions-date {
   color: #b8b8b8;
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -506,11 +475,11 @@ a.button:focus {
   border-bottom: 1px solid white;
 }
 
-.sessionContent {
+.sessions-content {
   flex-grow: 1;
 }
 
-.sessionsTitle {
+.sessions-title {
   color: white;
   font-size: 18px;
   letter-spacing: 0.5px;
@@ -520,7 +489,7 @@ a.button:focus {
   padding-bottom: 20px;
 }
 
-.sessionsText {
+.sessions-text {
   color: #b8b8b8;
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -528,43 +497,44 @@ a.button:focus {
   line-height: 20px;
 }
 
-.joinButton {
+.join-button {
   display: block;
   margin-top: 10px;
   width: 100% !important;
 }
 
 @media screen and (max-width: 800px) {
-  .sessionsContainer {
+  .sessions-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .sessionsCard {
+
+  .sessions-card {
     width: 35vw;
     margin-top: 40px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .sessionsContainer {
+  .sessions-container {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .sessionsCard {
+  .sessions-card {
     width: 40vw;
     margin-top: 40px;
   }
 
-  .sessionsText {
+  .sessions-text {
     font-size: 12px;
     width: 35vw;
   }
 
-  .sessionsTitle {
+  .sessions-title {
     font-size: 14px;
     width: 35vw;
   }
 
-  .sessionsDate {
+  .sessions-date {
     font-size: 12px;
     width: 35vw;
   }
@@ -577,7 +547,7 @@ a.button:focus {
   padding-bottom: 30px;
 }
 
-.partnersText {
+.partners-text {
   letter-spacing: 0.5px;
   display: flex;
   justify-content: space-between;
@@ -585,8 +555,8 @@ a.button:focus {
   width: 80vw;
   padding-right: 30px;
 }
-/*
-.partnersLogo {
+
+/* .partners-logo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 5vw;
@@ -597,7 +567,7 @@ a.button:focus {
   padding-left: 30px;
 } */
 
-.partnersLogo {
+.partners-logo {
   display: flex;
   flex-flow: row wrap;
   justify-items: center;
@@ -607,18 +577,14 @@ a.button:focus {
   align-items: center;
 }
 
-.partner {
-  filter: grayscale(100%);
-}
-
 @media screen and (max-width: 1200px) {
-  .partnersLogo {
+  .partners-logo {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 800px) {
-  .partnersLogo {
+  .partners-logo {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -632,12 +598,12 @@ a.button:focus {
   padding-left: 30px;
 }
 
-.partnersLogoBW {
+.partners-logo-bw {
   filter: grayscale(100%);
   margin-bottom: 20px;
 }
 
-.partnersLogoColor {
+.partners-logo-color {
   margin-bottom: 20px;
 }
 
@@ -656,7 +622,7 @@ a.button:focus {
   justify-content: space-between;
 }
 
-.footerText {
+.footer-text {
   font-size: 14px;
   font-weight: 300;
   color: white;
@@ -667,13 +633,14 @@ a.button:focus {
     flex-direction: column;
     justify-content: space-between;
   }
-  .footerText {
+
+  .footer-text {
     margin-top: 20px;
   }
 
   .link {
     text-decoration: underline;
-    border-bottom: 0px solid white;
+    border-bottom: 0 solid white;
   }
 }
 
@@ -683,19 +650,18 @@ a.button:focus {
   }
 }
 
-.BW {
+.bw {
   filter: grayscale(100%);
 }
 
-.partnersRowOne {
+.partners-row-one {
   display: flex;
-
   flex-direction: row;
   align-items: center;
 }
 
 @media screen and (max-width: 550px) {
-  .partnersRowOne {
+  .partners-row-one {
     flex-flow: row wrap;
   }
 }
