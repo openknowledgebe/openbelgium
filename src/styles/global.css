@@ -1,6 +1,6 @@
-@import "./css/reset.css";
-@import "./css/vars.css";
-@import "./css/header.css";
+@import "./reset.css";
+@import "./vars.css";
+@import "./header.css";
 
 html {
   box-sizing: border-box;
@@ -163,7 +163,7 @@ body {
   content: "";
   color: #cdb5fa;
   display: block;
-  background: url("assets/img/pijl.svg") no-repeat;
+  background: url("/assets/pijl.svg") no-repeat;
   width: 20px;
   height: 20px;
   float: left;
