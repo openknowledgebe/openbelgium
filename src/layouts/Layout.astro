@@ -1,0 +1,26 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Open Belgium 2022</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <style global>
+      @import "../styles/global.css";
+    </style>
+  </head>
+
+  <body class="body">
+    <Header />
+
+    <slot />
+
+    <Footer />
+  </body>
+</html>
