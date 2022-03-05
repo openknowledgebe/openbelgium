@@ -1,0 +1,9 @@
+---
+const { name, picture, title } = Astro.props;
+
+---
+<article class="speakerCard">
+  <img class="speakerImage" src=`/assets/speakers/${Astro.props.picture}` alt={Astro.props.name}>
+  <h3 class="speakerText">{Astro.props.name}</h3>
+  <p class="speakerText">{Astro.props.title}</p>
+</article>
