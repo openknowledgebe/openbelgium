@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Partner from '../components/Partner.astro';
 import Session from '../components/Session.astro';
 import Speaker from '../components/Speaker.astro';
 ---
@@ -140,69 +141,21 @@ import Speaker from '../components/Speaker.astro';
     </section>
     -->
 
-    <!-- partners section -->
     <section class="partners">
       <div class="partnersText">
         <h2 class="h2 black">Partners</h2>
-        <!-- <button class="buttonBlack" href="mailto: astrid@openknowledge.be" button><a class="buttonPartner" link href="mailto: astrid@openknowledge.be">Partner up</a></button> -->
-        <a
-          class="buttonBlack buttonPartner"
-          href="mailto: astrid@openknowledge.be"
-          >Partner up</a
-        >
+        <a class="buttonBlack buttonPartner" href="mailto: astrid@openknowledge.be">Partner up</a>
       </div>
 
       <div class="partnersRowOne">
-        <div class="partnersLogo">
-          <!-- copy this, start -->
-          <a class="partnersLogoColor" href="https://idlab.technology/">
-            <img
-              src="/assets/partners/imec-idlab-logo.png"
-              alt="logo imec IDLab"
-              width="150px"
-            />
-          </a>
-          <!-- end -->
-        </div>
-
-        <div class="partnersLogo">
-          <!-- copy this, start -->
-          <a class="partnersLogoColor" href="https://stad.gent/">
-            <img
-              src="/assets/partners/gent-stad-logo.png"
-              alt="logo Stad Gent"
-              width="200px"
-            />
-          </a>
-        </div>
-
-        <div class="partnersLogo">
-          <!-- copy this, start -->
-          <a
-            class="partnersLogoBW"
-            href="https://www.vlaanderen.be/agentschap-binnenlands-bestuur/"
-          >
-            <img
-              src="/assets/partners/abb-logo.png"
-              alt="logo ABB"
-              width="200px"
-            />
-          </a>
-        </div>
+        <Partner link="https://idlab.technology/" name="imec IDLab" logo="imec-idlab-logo.png" />
+        <Partner link="https://stad.gent/" name="Stad Gent" logo="gent-stad-logo.png" />
+        <Partner link="https://www.vlaanderen.be/agentschap-binnenlands-bestuur/" name="ABB" logo="abb-logo.png" />
       </div>
 
       <div class="partnersRowOne">
-        <div class="partnersLogo">
-          <a class="partnersLogoBW" href="https://openknowledge.be/">
-            <img
-              src="/assets/partners/okbe-logo.svg"
-              alt="logo OKBE"
-              width="150px"
-            />
-          </a>
-        </div>
+        <Partner link="https://openknowledge.be/" name="Open Knowledge Belgium" logo="okbe-logo.svg" />
       </div>
-      <!-- end -->
     </section>
 
 </Layout>
