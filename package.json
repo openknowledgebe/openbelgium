@@ -9,7 +9,10 @@
   },
   "devDependencies": {
     "astro": "^0.23.7",
+    "prettier": "2.5.1",
+    "prettier-plugin-astro": "^0.0.12",
     "stylelint": "^14.5.3",
+    "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^25.0.0"
   }
 }

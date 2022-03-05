@@ -1,8 +1,13 @@
 ---
 const { link, logo, name } = Astro.props;
 ---
+
 <div class="partners-logo">
   <a class="partners-logo-color" href={Astro.props.link}>
-    <img src=`/assets/partners/${Astro.props.logo}` alt={Astro.props.name} width="150px" />
+    <img
+      src={"/assets/partners/" + Astro.props.logo}
+      alt={Astro.props.name}
+      width="150px"
+    />
   </a>
 </div>
