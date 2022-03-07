@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Program from "../components/Program.astro";
 import Partner from "../components/Partner.astro";
 import Session from "../components/Session.astro";
 import Speaker from "../components/Speaker.astro";
@@ -9,7 +8,14 @@ import Speaker from "../components/Speaker.astro";
 <Layout>
   <div class="demo-1">
     <h3>
-      Check the Conference program below · Get your ticket before it's too late
+      Call for speakers & demos open · Call for speakers & demos open · Call for
+      speakers & demos open · Call for speakers & demos open · Call for speakers
+      & demos open · Call for speakers & demos open · Call for speakers & demos
+      open · Call for speakers & demos open · Call for speakers & demos open ·
+      Call for speakers & demos open · Call for speakers & demos open · Call for
+      speakers & demos open · Call for speakers & demos open · Call for speakers
+      & demos open · Call for speakers & demos open · Call for speakers & demos
+      open · Call for speakers & demos open · Call for speakers & demos open
     </h3>
   </div>
 
@@ -22,7 +28,7 @@ import Speaker from "../components/Speaker.astro";
       </h2>
       <h2 class="h2 intro">
         Join us to discuss the future of
-        <strong>Open, Privacy and Trust</strong> in Belgium in 2022 -
+        <strong>Open, Privacy and Trust</strong> in Belgium in 2022 –
         <strong>live</strong> at “De Krook” in Ghent.
       </h2>
       <!-- <a target="_blank" href="https://form.typeform.com/to/S70tAdxS"
@@ -30,7 +36,7 @@ import Speaker from "../components/Speaker.astro";
     </div>
   </section>
 
-  <!--<section class="section-width">
+  <section class="section-width">
     <div>
       <div class="section-border sessions">
         <h2 class="h2">Submit your proposal before 21 March!</h2>
@@ -51,37 +57,35 @@ import Speaker from "../components/Speaker.astro";
       />
       <br />
     </p>
-  </section>-->
+  </section>
 
   <!-- program section -->
   <section class="section-width">
     <div class="section-border sessions">
-      <h2 class="h2">Conference Program</h2>
+      <h2 class="h2">Programme</h2>
       <a
         target="_blank"
         href="https://openbelgium22.eventbrite.be"
         class="button session-button">Attend OpenBelgium22</a
       >
     </div>
-    <!-- conference schedule
+    <!-- conference schedule -->
     <div class="table">
-      <div>09:30 - 10:00</div>
+      <div>09:30 - 10:30</div>
       <div>Registration & welcome coffee on De Krook site</div>
 
-      <div>10:00 - 13:00</div>
+      <div>10:30 - 13:00</div>
       <div>Open, Privacy and trust speakers session</div>
 
       <div>13:00 - 14:00</div>
       <div>Lunch</div>
 
-      <div>14:00 - 17:00</div>
+      <div>14:00 - 16:00</div>
       <div>Demos & workshops</div>
 
-      <div>17:00 - 18:00</div>
+      <div>16:00 - 17:00</div>
       <div>Reception</div>
-    </div> -->
-    <!-- Import Pogram section -->
-    <Program />
+    </div>
   </section>
 
   <p class="empty-state empty-stateprev">
@@ -89,112 +93,21 @@ import Speaker from "../components/Speaker.astro";
     energy. If you can’t make it, we will live-stream our talks.
     <br />
   </p>
+  <p class="empty-state">Stay tuned, the line-up will follow shortly</p>
 
-  <section class="section-width">
-    <div>
-      <div class="section-border sessions">
-        <h2 class="h2">Speakers</h2>
-        <a
-          target="_blank"
-          href="https://openbelgium22.eventbrite.be"
-          class="button session-button">Get my ticket</a
-        >
+  <!--
+    <section class="section-width">
+      <div>
+        <div class="section-border sessions">
+          <h2 class="h2">Speakers</h2>
+        </div>
       </div>
-    </div>
 
-    <div class="speaker-container">
-      <Speaker
-        name="Bart Rosseau"
-        title="Chief Data Officer at Stad Gent"
-        picture="Bart Rosseau.jpg"
-      />
-      <Speaker
-        name="Renata Ávila"
-        title="CEO Open Knowledge Foundation"
-        picture="Renata Avila.jpg"
-      />
-      <Speaker
-        name="Viivi Lähteenoja"
-        title="Chair MyData Global"
-        picture="Viivi Lahteenoja.jpg"
-      />
-      <Speaker
-        name="Bart Jacobs"
-        title="Professor of Security, Privacy and Identity"
-        picture="Bart Jacobs.jpg"
-      />
-      <Speaker
-        name="Ruben Verborgh"
-        title="Professor of Decentralized Web technology"
-        picture="Ruben Verborgh.jpg"
-      />
-      <Speaker
-        name="Jos Pyck"
-        title=" Project Manager for Pin je punt at Toerisme Vlaanderen"
-        picture="Jos Pyck.jpg"
-      />
-      <Speaker
-        name="Veronique Volders"
-        title="Digital Solution Manager at Agentschap Binnenlands Bestuur"
-        picture="Veronique Volders.jpg"
-      />
-      <Speaker
-        name="Olivier Van D'huynslager"
-        title="Head of Digital for the Design Museum Gent"
-        picture="Olivier Van D'huynslager.jpg"
-      />
-      <Speaker
-        name="Pieter Vander Vennet"
-        title="Lead developer for MapComplete"
-        picture="Pieter Vander Vennet.jpg"
-      />
-      <Speaker
-        name="Joost Schouppe"
-        title="OpenStreetMap Belgium"
-        picture="Joost Schouppe.png"
-      />
-      <Speaker
-        name="Bart Hanssens"
-        title="FOD/SPF BOSA"
-        picture="Bart Hanssens.jpg"
-      />
-      <Speaker
-        name="Marc Portier"
-        title="Open Science Team Lead, VLIZ"
-        picture="Marc Portier.jpg"
-      />
-      <Speaker
-        name="Inge Van Nieuwerburgh"
-        title="Open Science expert, Ghent University"
-        picture="Inge Van Nieuwerburgh.jpg"
-      />
-      <Speaker
-        name="Philippe Duchesne"
-        title="Technical Lead, Datavillage"
-        picture="Philippe Duchesne.jpg"
-      />
-      <Speaker
-        name="Dr. Robert Riemann"
-        title="Technology and Privacy Officer, European Data Protection Supervisor"
-        picture="Robert Riemann.jpg"
-      />
-      <Speaker
-        name="Pieter Duysburgh"
-        title="Operational Lead, Knowledge Centre Data & Society"
-        picture="Pieter Duysburgh.jpg"
-      />
-      <Speaker
-        name="Aad Versteden"
-        title="CEO at redpencil.io | CEO at ipfs-search"
-        picture="Aad Versteden.jpg"
-      />
-      <Speaker
-        name="Benoît Fricheteau"
-        title="Metadata expert, FDS Finance"
-        picture="Benoît Fricheteau.jpg"
-      />
-    </div>
-  </section>
+      <div class="speaker-container">
+        <Speaker name="Mathieu Michel" title="State Secretary for Digitalisation" picture="Mathieu Michel.jpg" />
+      </div>
+    </section>
+  -->
 
   <!--
     <section class="section-width">
@@ -207,43 +120,7 @@ import Speaker from "../components/Speaker.astro";
       </div>
     </section>
   -->
-  <!-- Previous editions section -->
-  <section class="section-width">
-    <div class="section-border sessions">
-      <h2 class="h2">Previous editions</h2>
-      <!--<a
-        target="_blank"
-        href="https://openbelgium22.eventbrite.be"
-        class="button session-button">Attend OpenBelgium22</a
-      > -->
-    </div>
-  </section>
 
-  <!-- Previous editions buttons -->
-  <section class="section-width">
-    <div class="sessions">
-      <a
-        target="_blank"
-        href="https://2018.openbelgium.be/"
-        class="button session-button">2018</a
-      >
-      <a
-        target="_blank"
-        href="https://2019.openbelgium.be/"
-        class="button session-button">2019</a
-      >
-      <a
-        target="_blank"
-        href="https://2020.openbelgium.be/"
-        class="button session-button">2020</a
-      >
-      <a
-        target="_blank"
-        href="https://2021.openbelgium.be/"
-        class="button session-button">2021</a
-      >
-    </div>
-  </section>
   <section class="partners">
     <div class="partners-text">
       <h2 class="h2 black">Partners</h2>
@@ -257,7 +134,7 @@ import Speaker from "../components/Speaker.astro";
       <Partner
         link="https://idlab.technology/"
         name="imec IDLab"
-        logo="imec-idlab-logo.svg"
+        logo="imec-idlab-logo.png"
       />
       <Partner
         link="https://stad.gent/"
@@ -265,17 +142,12 @@ import Speaker from "../components/Speaker.astro";
         logo="gent-stad-logo.png"
       />
       <Partner
-        link="https://redpencil.io/"
-        name="redpencil.io"
-        logo="redpencil-logo.svg"
-      />
-      <Partner
-        link="https://www.vlaanderen.be/agentschap-binnenlands-bestuur"
-        name="Agentschap Binnenlands Bestuur"
-        logo="abb-logo.png"
+        link="https://openknowledge.be/"
+        name="Open Knowledge Belgium"
+        logo="okbe-logo.svg"
       />
     </div>
-
+    <!--
     <div class="partners-row-one">
       <Partner
         link="https://openknowledge.be/"
@@ -283,5 +155,6 @@ import Speaker from "../components/Speaker.astro";
         logo="okbe-logo.svg"
       />
     </div>
+    -->
   </section>
 </Layout>
