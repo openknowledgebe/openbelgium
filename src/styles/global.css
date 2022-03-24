@@ -230,6 +230,7 @@ a.button {
   border: 1px solid white;
   text-align: center;
   text-decoration: none;
+  width: 20%;
 }
 
 button:hover,
