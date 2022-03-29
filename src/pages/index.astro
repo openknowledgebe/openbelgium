@@ -63,7 +63,7 @@ import Speaker from "../components/Speaker.astro";
   <!-- program section -->
   <section class="section-width">
     <div class="section-border sessions">
-      <h2 class="h2">Meetup Program</h2>
+      <h2 class="h2">Conference Program</h2>
       <a
         target="_blank"
         href="https://openbelgium22.eventbrite.be"
@@ -72,19 +72,19 @@ import Speaker from "../components/Speaker.astro";
     </div>
     <!-- conference schedule -->
     <div class="table">
-      <div>09:30 - 10:30</div>
+      <div>09:30 - 10:00</div>
       <div>Registration & welcome coffee on De Krook site</div>
 
-      <div>10:30 - 13:00</div>
+      <div>10:00 - 13:00</div>
       <div>Open, Privacy and trust speakers session</div>
 
       <div>13:00 - 14:00</div>
       <div>Lunch</div>
 
-      <div>14:00 - 16:00</div>
+      <div>14:00 - 17:00</div>
       <div>Demos & workshops</div>
 
-      <div>16:00 - 17:00</div>
+      <div>17:00 - 18:00</div>
       <div>Reception</div>
     </div>
   </section>
@@ -94,9 +94,37 @@ import Speaker from "../components/Speaker.astro";
     energy. If you can’t make it, we will live-stream our talks.
     <br />
   </p>
-  <p class="empty-state">Stay tuned, the line-up will follow shortly</p>
+  <p class="empty-state">Stay tuned, the complete line-up will follow shortly</p>
 
-  <!-- Previous editions section -->
+    <section class="section-width">
+      <div>
+        <div class="section-border sessions">
+          <h2 class="h2">Speakers</h2>
+        </div>
+      </div>
+
+      <div class="speaker-container">
+        <Speaker name="Ruben Verborgh" title="Professor of Decentralized Web technology" picture="Ruben Verborgh.jpg" />
+        <Speaker name="Jos Pyck" title=" Project Manager for Pin je punt at Toerisme Vlaanderen" picture="Jos Pyck.jpg" />
+        <Speaker name="Veronique Volders" title="Digital Solution Manager at Agentschap Binnenlands Bestuur" picture="Veronique Volders.jpg" />
+        <Speaker name="Pieter Vander Vennet" title="Lead developer for MapComplete" picture="Pieter Vander Vennet.jpg" />
+        <Speaker name="Olivier Van D'huynslager" title="Head of Digital for the Design Museum Gent" picture="Olivier Van D'huynslager.jpg" />
+      </div>
+    </section>
+
+
+  <!--
+    <section class="section-width">
+      <div class="section-border sessions">
+        <h2 class="h2">Sessions</h2>
+      </div>
+
+      <div class="sessions-container">
+        <Session datetime="2 March 2021, 9.30-10.15" title="We reuse LOD and open it up. Your turn to build it!" speakers="Katrien De Smet, Veronique Volders" link="https://youtu.be/aBiU_RA65e8" />
+      </div>
+    </section>
+  -->
+<!-- Previous editions section -->
   <section class="section-width">
     <div class="section-border sessions">
       <h2 class="h2">Previous editions</h2>
@@ -107,6 +135,7 @@ import Speaker from "../components/Speaker.astro";
       > -->
     </div>
   </section>
+  
   <!-- Previous editions buttons -->
   <section class="section-width">
     <div class="sessions">
@@ -132,32 +161,6 @@ import Speaker from "../components/Speaker.astro";
       >
     </div>
   </section>
-  <!--
-    <section class="section-width">
-      <div>
-        <div class="section-border sessions">
-          <h2 class="h2">Speakers</h2>
-        </div>
-      </div>
-
-      <div class="speaker-container">
-        <Speaker name="Mathieu Michel" title="State Secretary for Digitalisation" picture="Mathieu Michel.jpg" />
-      </div>
-    </section>
-  -->
-
-  <!--
-    <section class="section-width">
-      <div class="section-border sessions">
-        <h2 class="h2">Sessions</h2>
-      </div>
-
-      <div class="sessions-container">
-        <Session datetime="2 March 2021, 9.30-10.15" title="We reuse LOD and open it up. Your turn to build it!" speakers="Katrien De Smet, Veronique Volders" link="https://youtu.be/aBiU_RA65e8" />
-      </div>
-    </section>
-  -->
-
   <section class="partners">
     <div class="partners-text">
       <h2 class="h2 black">Partners</h2>
