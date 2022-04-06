@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Program from "../components/Program.astro";
 import Partner from "../components/Partner.astro";
 import Session from "../components/Session.astro";
 import Speaker from "../components/Speaker.astro";
@@ -8,15 +9,7 @@ import Speaker from "../components/Speaker.astro";
 <Layout>
   <div class="demo-1">
     <h3>
-      Get your early bird ticket · Stay tuned, the line-up will follow shortly ·
-      Get your early bird ticket · Stay tuned, the line-up will follow shortly ·
-      Get your early bird ticket · Stay tuned, the line-up will follow shortly ·
-      Get your early bird ticket · Stay tuned, the line-up will follow shortly ·
-      Get your early bird ticket · Stay tuned, the line-up will follow shortly ·
-      Get your early bird ticket · Stay tuned, the line-up will follow shortly ·
-      Get your early bird ticket · Stay tuned, the line-up will follow shortly ·
-      Get your early bird ticket · Stay tuned, the line-up will follow shortly ·
-      Get your early bird ticket · Stay tuned, the line-up will follow shortly
+      Check the Conference program below · Get your ticket before it's too late
     </h3>
   </div>
 
@@ -70,7 +63,7 @@ import Speaker from "../components/Speaker.astro";
         class="button session-button">Attend OpenBelgium22</a
       >
     </div>
-    <!-- conference schedule -->
+    <!-- conference schedule
     <div class="table">
       <div>09:30 - 10:00</div>
       <div>Registration & welcome coffee on De Krook site</div>
@@ -86,7 +79,9 @@ import Speaker from "../components/Speaker.astro";
 
       <div>17:00 - 18:00</div>
       <div>Reception</div>
-    </div>
+    </div> -->
+    <!-- Import Pogram section -->
+    <Program />
   </section>
 
   <p class="empty-state empty-stateprev">
@@ -94,14 +89,16 @@ import Speaker from "../components/Speaker.astro";
     energy. If you can’t make it, we will live-stream our talks.
     <br />
   </p>
-  <p class="empty-state">
-    Stay tuned, the complete line-up will follow shortly
-  </p>
 
   <section class="section-width">
     <div>
       <div class="section-border sessions">
         <h2 class="h2">Speakers</h2>
+        <a
+          target="_blank"
+          href="https://openbelgium22.eventbrite.be"
+          class="button session-button">Get my ticket</a
+        >
       </div>
     </div>
 
@@ -115,6 +112,11 @@ import Speaker from "../components/Speaker.astro";
         name="Renata Ávila"
         title="CEO Open Knowledge Foundation"
         picture="Renata Avila.jpg"
+      />
+      <Speaker
+        name="Viivi Lähteenoja"
+        title="Chair MyData Global"
+        picture="Viivi Lahteenoja.jpg"
       />
       <Speaker
         name="Bart Jacobs"
@@ -150,6 +152,46 @@ import Speaker from "../components/Speaker.astro";
         name="Joost Schouppe"
         title="OpenStreetMap Belgium"
         picture="Joost Schouppe.png"
+      />
+      <Speaker
+        name="Bart Hanssens"
+        title="FOD/SPF BOSA"
+        picture="Bart Hanssens.jpg"
+      />
+      <Speaker
+        name="Marc Portier"
+        title="Open Science Team Lead, VLIZ"
+        picture="Marc Portier.jpg"
+      />
+      <Speaker
+        name="Inge Van Nieuwerburgh"
+        title="Open Science expert, Ghent University"
+        picture="Inge Van Nieuwerburgh.jpg"
+      />
+      <Speaker
+        name="Philippe Duchesne"
+        title="Technical Lead, Datavillage"
+        picture="Philippe Duchesne.jpg"
+      />
+      <Speaker
+        name="Dr. Robert Riemann"
+        title="Technology and Privacy Officer, European Data Protection Supervisor"
+        picture="Robert Riemann.jpg"
+      />
+      <Speaker
+        name="Pieter Duysburgh"
+        title="Operational Lead, Knowledge Centre Data & Society"
+        picture="Pieter Duysburgh.jpg"
+      />
+      <Speaker
+        name="Aad Versteden"
+        title="CEO at redpencil.io | CEO at ipfs-search"
+        picture="Aad Versteden.jpg"
+      />
+      <Speaker
+        name="Benoît Fricheteau"
+        title="Metadata expert, FDS Finance"
+        picture="Benoît Fricheteau.jpg"
       />
     </div>
   </section>
