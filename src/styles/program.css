@@ -1,0 +1,217 @@
+:root {
+  --padding: 4rem;
+  --border: hsl(0, 0%, 20%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+.heading {
+  line-height: 2;
+  font-weight: 900;
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+summary > * {
+  display: inline;
+}
+
+details summary > * {
+  display: inline;
+}
+
+details summary {
+  cursor: pointer;
+}
+
+summary {
+  list-style: none;
+}
+
+.schedule-container {
+  overflow: hidden;
+}
+
+.schedule-stage__wrapper {
+  display: inline-block;
+}
+
+.schedule-stage {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  min-width: 100vw;
+}
+
+.schedule-stage::after {
+  content: "";
+  width: var(--padding);
+}
+
+.divider {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  border: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.schedule-stage:nth-child(1) > .schedule-stage__title > h3 {
+  background: red;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#3b41c5),
+    to(#a981bb),
+    to(#ffc8a9)
+  );
+  background: linear-gradient(to right, #3b41c5, #a981bb, #ffc8a9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.schedule-stage_:nth-child(3) > .schedule-stage__title > h3 {
+  background: red;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#fbef7c),
+    to(#cdb5fa)
+  );
+  background: linear-gradient(to right, #fbef7c, #cdb5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.schedule-stage:nth-child(5) > .schedule-stage__title > h3 {
+  background: red;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#cdb5fa),
+    to(#93f9b9)
+  );
+  background: linear-gradient(to right, #cdb5fa, #93f9b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.schedule-stage:nth-child(7) > .schedule-stage__title > h3 {
+  background: red;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#cdb5fa),
+    to(#feb0bf)
+  );
+  background: linear-gradient(to right, #cdb5fa, #feb0bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.schedule-stage__title {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  padding-right: 5rem;
+  height: 100%;
+  padding-left: var(--padding);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(30%, #141414),
+    to(rgba(0, 0, 0, 0))
+  );
+  background: linear-gradient(to right, #141414 30%, rgba(0, 0, 0, 0));
+}
+
+.schedule-stage__title > h3 {
+  font-weight: 900;
+}
+
+.schedule-stage_guide-container {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 280px;
+  grid-gap: 2rem;
+  overflow: auto;
+}
+
+.guide-slot {
+  color: gray;
+}
+
+.guide-slot > p {
+  margin-bottom: 1rem;
+}
+
+.guide-slot_card {
+  background: #0a0a0a;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  padding: 1.6rem;
+  cursor: pointer;
+}
+
+.guide-slot_card:hover {
+  border-color: #b3b3b3;
+}
+
+.guide-slot_card > h4 {
+  margin-right: 5rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.author-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1rem;
+}
