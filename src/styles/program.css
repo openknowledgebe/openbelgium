@@ -1,20 +1,18 @@
 :root {
   --padding: 4rem;
-  --border: hsl(0, 0%, 20%);
+  --border: hsl(0deg 0% 20%);
 }
 
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -54,22 +52,16 @@ details summary {
   cursor: pointer;
 }
 
-summary {
-  list-style: none;
-}
-
 .schedule-container {
   overflow: hidden;
 }
 
-.schedule-stage__wrapper {
+.schedule-stage-wrapper {
   display: inline-block;
 }
 
 .schedule-stage {
-  display: -ms-grid;
   display: grid;
-  grid-auto-columns: -webkit-max-content;
   grid-auto-columns: max-content;
   grid-auto-flow: column;
   grid-gap: 2rem;
@@ -84,93 +76,54 @@ summary {
 }
 
 .divider {
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   border: none;
   border-bottom: 1px solid var(--border);
 }
 
-.schedule-stage:nth-child(1) > .schedule-stage__title > h3 {
+.schedule-stage-title > h3 {
+  font-weight: 900;
+}
+
+.schedule-stage:nth-child(1) > .schedule-stage-title > h3 {
   background: red;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#3b41c5),
-    to(#a981bb),
-    to(#ffc8a9)
-  );
   background: linear-gradient(to right, #3b41c5, #a981bb, #ffc8a9);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.schedule-stage_:nth-child(3) > .schedule-stage__title > h3 {
+.schedule-stage:nth-child(3) > .schedule-stage-title > h3 {
   background: red;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#fbef7c),
-    to(#cdb5fa)
-  );
   background: linear-gradient(to right, #fbef7c, #cdb5fa);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.schedule-stage:nth-child(5) > .schedule-stage__title > h3 {
+.schedule-stage:nth-child(5) > .schedule-stage-title > h3 {
   background: red;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#cdb5fa),
-    to(#93f9b9)
-  );
   background: linear-gradient(to right, #cdb5fa, #93f9b9);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.schedule-stage:nth-child(7) > .schedule-stage__title > h3 {
+.schedule-stage:nth-child(7) > .schedule-stage-title > h3 {
   background: red;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#cdb5fa),
-    to(#feb0bf)
-  );
   background: linear-gradient(to right, #cdb5fa, #feb0bf);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.schedule-stage__title {
-  position: -webkit-sticky;
+.schedule-stage-title {
   position: sticky;
   left: 0;
   padding-right: 5rem;
   height: 100%;
   padding-left: var(--padding);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(30%, #141414),
-    to(rgba(0, 0, 0, 0))
-  );
-  background: linear-gradient(to right, #141414 30%, rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, #141414 30%, rgb(0 0 0 / 0%));
 }
 
-.schedule-stage__title > h3 {
-  font-weight: 900;
-}
-
-.schedule-stage_guide-container {
-  display: -ms-grid;
+.schedule-stage-guide-container {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 280px;
@@ -186,7 +139,7 @@ summary {
   margin-bottom: 1rem;
 }
 
-.guide-slot_card {
+.guide-slot-card {
   background: #0a0a0a;
   border: 1px solid var(--border);
   border-radius: 0.8rem;
@@ -196,19 +149,17 @@ summary {
   cursor: pointer;
 }
 
-.guide-slot_card:hover {
+.guide-slot-card:hover {
   border-color: #b3b3b3;
 }
 
-.guide-slot_card > h4 {
+.guide-slot-card > h4 {
   margin-right: 5rem;
   font-size: 1.4rem;
-  color: #ffffff;
+  color: #fff;
 }
 
 .author-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
