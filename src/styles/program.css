@@ -86,34 +86,6 @@ details summary {
   font-weight: 900;
 }
 
-.schedule-stage:nth-child(1) > .schedule-stage-title > h3 {
-  background: red;
-  background: linear-gradient(to right, #3b41c5, #a981bb, #ffc8a9);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.schedule-stage:nth-child(3) > .schedule-stage-title > h3 {
-  background: red;
-  background: linear-gradient(to right, #fbef7c, #cdb5fa);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.schedule-stage:nth-child(5) > .schedule-stage-title > h3 {
-  background: red;
-  background: linear-gradient(to right, #cdb5fa, #93f9b9);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.schedule-stage:nth-child(7) > .schedule-stage-title > h3 {
-  background: red;
-  background: linear-gradient(to right, #cdb5fa, #feb0bf);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .schedule-stage-title {
   position: sticky;
   left: 0;
