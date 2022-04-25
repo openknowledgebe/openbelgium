@@ -67,7 +67,7 @@ details summary {
   grid-gap: 2rem;
   padding-bottom: 5rem;
   padding-top: 2rem;
-  min-width: 100vw;
+  width: 100%;
 }
 
 .schedule-stage::after {
@@ -98,9 +98,10 @@ details summary {
 .schedule-stage-guide-container {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 280px;
+  grid-auto-columns: auto;
   grid-gap: 2rem;
   overflow: auto;
+  width: 100%;
 }
 
 .guide-slot {
