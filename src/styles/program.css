@@ -97,12 +97,20 @@ details summary {
 
 .schedule-stage-guide-container {
   display: grid;
-  grid-auto-flow: column;
   grid-auto-columns: auto;
   grid-gap: 2rem;
   overflow: auto;
-  width: 100%;
+  width: 80%;
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .schedule-stage-guide-container {
+    grid-auto-flow: column;
+    width: 100%;    
+  }
+}
+
 
 .guide-slot {
   color: gray;
