@@ -107,10 +107,9 @@ details summary {
 @media only screen and (min-width: 905px) {
   .schedule-stage-guide-container {
     grid-auto-flow: column;
-    width: 100%;    
+    width: 100%;
   }
 }
-
 
 .guide-slot {
   color: gray;
