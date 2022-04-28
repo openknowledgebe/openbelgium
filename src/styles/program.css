@@ -103,8 +103,7 @@ details summary {
   width: 80%;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 905px) {
   .schedule-stage-guide-container {
     grid-auto-flow: column;
     width: 100%;    
