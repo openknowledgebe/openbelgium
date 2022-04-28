@@ -84,6 +84,7 @@ details summary {
 
 .schedule-stage-title > h3 {
   font-weight: 900;
+  width: 80%;
 }
 
 .schedule-stage-title {
@@ -97,11 +98,17 @@ details summary {
 
 .schedule-stage-guide-container {
   display: grid;
-  grid-auto-flow: column;
   grid-auto-columns: auto;
   grid-gap: 2rem;
   overflow: auto;
-  width: 100%;
+  width: 80%;
+}
+
+@media only screen and (min-width: 905px) {
+  .schedule-stage-guide-container {
+    grid-auto-flow: column;
+    width: 100%;
+  }
 }
 
 .guide-slot {
