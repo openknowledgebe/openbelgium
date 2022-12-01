@@ -9,9 +9,11 @@ const { datetime, speakers, title, link } = Astro.props;
     <p class="sessions-text">{Astro.props.speakers}</p>
   </div>
 
-  {Astro.props.link && (
-    <a target="_blank" href={Astro.props.link} class="button join-button">
-      View session
-    </a>
-  )}
+  {
+    Astro.props.link && (
+      <a target="_blank" href={Astro.props.link} class="button join-button">
+        View session
+      </a>
+    )
+  }
 </article>
