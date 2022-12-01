@@ -1,7 +1,7 @@
-@import "./reset.css";
-@import "./vars.css";
-@import "./header.css";
-@import "./program.css";
+@import url("./reset.css");
+@import url("./vars.css");
+@import url("./header.css");
+@import url("./program.css");
 
 html {
   box-sizing: border-box;
